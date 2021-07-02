@@ -36,7 +36,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
+        src="../images/avatar.png"
         width={50}
         height={50}
         quality={95}
@@ -44,11 +44,35 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          <strong>{author.name}</strong> {author?.summary || null}
+          <br/>
+          <strong>Note</strong>: Hyperlinks below open a new tab.
+          <br/>
+          {"You can reach out to me via "}
+          <strong>
+            <a href={`mailto:kprateeknayak@gmail.com`} rel="noreferrer" target={"_blank"}>
+              Email
+            </a>
+          </strong>
+          {", "}
+          <strong>
+            <a href={`https://twitter.com/${social?.twitter || ``}`} rel="noreferrer" target={"_blank"}>
+              Twitter
+            </a>
+          </strong>
+          {", or "}
+          <strong>
+            <a href={`https://github.com/outofordercore/outofordercore.github.io/issues`} rel="noreferrer" target={"_blank"}>
+              Github
+            </a>
+          </strong>
+          <br/>
+          {"Avatar stolen from "}
+          <strong>
+            <a href={`https://knowyourmeme.com/photos/1896667-soy-boy-face-soyjak`} rel="noreferrer" target={"_blank"}>
+              KnowYourMeme
+            </a>
+          </strong>
         </p>
       )}
     </div>

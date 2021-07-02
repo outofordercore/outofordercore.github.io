@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Out of Order Core`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Hello `,
+      summary: `I'm Prateek Nayak, an undergraduate student studying Computer Science.`
+      + ` This blog hosts my explanations about various interesting stuff I've understood (or thought I've understood) while exploring the microarchiteture that powers our modern computers.`
+      + ` People say I'm a pleasant person so don't hesitate if you ever want to reach out to me regarding errors in this blog or just to discuss computer architecture in general`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A blog discussing computer architecture and microarchitectural implementation by dissecting vulnerabilities of modern processing devices.`,
+    siteUrl: `https://outofordercore.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Kriyszig`,
     },
   },
   plugins: [
@@ -112,13 +114,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Out of Order Code Blog`,
+        short_name: `OoO Core`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
