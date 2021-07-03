@@ -106,6 +106,7 @@ h6 {
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
+  word-wrap: break-word;
 }
 
 h2,
@@ -231,6 +232,7 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
+  word-wrap: break-word;
 }
 
 a:hover,
@@ -289,6 +291,18 @@ a:focus {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-avatar {
+    padding-bottom: var(--spacing-6);
+  }
 }
 
 .bio p {
