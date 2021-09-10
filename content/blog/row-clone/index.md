@@ -96,10 +96,12 @@ There are numerous advantages of RowClone:
 
 - RowClone takes a small fraction of energy required to clone data compared to traditional CPU centered approaches.
 - RowClone is very fast compared to CPU centered approaches as data doesn't leave the DRAM module.
-- RowClone prevents cache pollution by not bringing in data to CPU thus keeping  
+- RowClone prevents cache pollution by not bringing in data to CPU thus keeping cache untouched, and not filling it with replicated data.
 
 The authors later went on to publish more papers that solved efficiency issues related to data transfer between different banks that would have otherwise used the data bus and consumed more power.
 
 RowClone gives an different perspective at processing similar to Processing using Memory - instead of centering processing around CPU, we can move processing near data to save time and energy and as our focus shifts to making more energy efficient and data centric architectures to counter slowing down of Moore's Law.
 
 Thank you for reading till the end. I'm an undergraduate student keenly interested in Computer Architecture and I look at micro-architectural based attacks to understand more about the working of our hardware. If you find any inaccuracies in the above post, please leave a comment and I'll address it in the next edit. Have a nice day!
+
+**Edit:** Fixed some typographical errors pointed out by reader Samyak (<a href="https://github.com/Samyak2" target="_blank">Github</a>, <a href="https://twitter.com/Samyak210" target="_blank">Twitter</a>) (link opens Samyak's profile on respective platform in a new tab)
